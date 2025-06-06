@@ -7,7 +7,14 @@
 :root{
       --Leckerli-One: 'Leckerli One';
       --Baloo-2: 'Baloo-2';
-      --Open-sans: 'Open-sans';
+      --Open-sans: 'Open Sans';
+
+      /* FONTS */
+
+      --body-md: 16px var(--Open-sans);
+      --body-sm: 600 14px var(--Open-sans);
+      --body-xs: 600 12px var(--Open-sans);
+      
 
       /* BRAND COLOR */
 

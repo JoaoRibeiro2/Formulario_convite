@@ -10,11 +10,33 @@
 
 aside{
       padding: 1.25rem;
-      background-image: url(../assets/Background-1.png);
-      .aside-container{
-
+}
+.aside-container{
+      height: 100%;
+      padding: 2rem;
+      background-image: url(../assets/Background.png);
+      background-size: 100% 100%;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      img{
+            width: 2.80rem;
+            aspect-ratio:
+             1/1;
+            }
+      h1{
+            font: 500 40px var(--Leckerli-One);
+            color: var(--pink);
+            margin-block: 1rem .5rem;
+      }
+      p{
+            font: var(--body-md);
+            font-weight: 300;
+            color: var(--text-heading);
       }
 }
+
+
 
 main{
       background: var(--shape-body);
