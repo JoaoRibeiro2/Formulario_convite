@@ -1,5 +1,5 @@
 @import url('global.css');
-
+@import url('layout.css');
 #app{
       overflow: hidden;
       display: grid;
@@ -37,8 +37,3 @@ aside{
 }
 
 
-
-main{
-      background: var(--shape-body);
-
-}
