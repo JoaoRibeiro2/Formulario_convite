@@ -1,0 +1,22 @@
+@import url('global.css');
+
+#app{
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 33% 67%;
+      height: 100vh;
+      background: #1E1E1E;
+}
+
+aside{
+      padding: 1.25rem;
+      background-image: url(../assets/Background-1.png);
+      .aside-container{
+
+      }
+}
+
+main{
+      background: var(--shape-body);
+
+}
