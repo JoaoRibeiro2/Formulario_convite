@@ -1,6 +1,46 @@
+#app{
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 33% 67%;
+      height: 100vh;
+      background: #1E1E1E;
+}
 
+aside{
+      padding: 1.25rem;
+}
+.aside-container{
+      height: 100%;
+      padding: 2rem;
+      background-image: url(../assets/Background.png);
+      background-size: 100% 100%;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      img{
+            width: 2.80rem;
+            aspect-ratio:
+             1/1;
+            }
+      h1{
+            font: 500 40px var(--Leckerli-One);
+            color: var(--pink);
+            margin-block: 1rem .5rem;
+      }
+      p{
+            font: var(--body-md);
+            font-weight: 300;
+            color: var(--text-heading);
+      }
+}
 
 .main-container{
       width: 35rem;
       background: var(--shape-body);
+      padding-block: 5rem;
+      border-radius: 0.75rem;
+      h2{
+            font: 700 1.75rem 'Baloo 2';
+            color: var(--text-heading);
+      }
 }
