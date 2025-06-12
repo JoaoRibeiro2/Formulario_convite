@@ -1,1 +1,50 @@
-.about-event{ border: none; }
+
+
+.about-event{ 
+      border: none; 
+      margin-top: 1.5rem;
+      header{
+            display: flex;
+            font: 700 1.12rem 'Baloo 2';
+            gap: 0.75rem;
+            color: var(--text-heading);
+      }
+
+}
+.input-wrapper, .text-wrapper{
+      font: var(--body-sm);
+      color: var(--text-body);
+      margin-top: 1rem;
+}
+.input-wrapper{
+      display: grid;
+      grid-template-rows: 1fr, 1fr;
+      gap: 0.75rem;
+      & input{
+            height: 3rem;
+            padding: 1rem; 
+           box-sizing: border-box;
+           border: 1px solid var(--input-stroke);
+      }
+
+}
+input, textarea{
+      all: unset;
+      background: var(--input-base);
+      border-radius: 0.5rem;
+      color: var(--input-placeholder);
+}     
+.grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+}
+.radio-wrapper{
+      margin-top: 1rem;
+      
+      h2{
+            font: var(--body-sm);
+            color: var(--text-body);
+
+      }
+}
