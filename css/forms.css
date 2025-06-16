@@ -39,12 +39,57 @@ input, textarea{
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
 }
-.radio-wrapper{
+.box-radio{
       margin-top: 1rem;
-      
+
       h2{
             font: var(--body-sm);
             color: var(--text-body);
+            margin-bottom: 0.75rem;
+      }
+}
 
+.radio-group{
+      background: var(--input-base);
+      border-radius: 0.5rem;
+      color: var(--input-placeholder);
+      height: 3rem;
+      box-sizing: border-box;
+      border: 1px solid var(--input-stroke);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding: 0.25rem;
+}
+
+.radio-wrapper{
+      font: 500 14px 'Open Sans';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all ease 0.3s;
+      position: relative;
+      & input{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            opacity: 0%;
+      }
+      & svg {
+            width: 1rem;
+            height: 1rem;
+      }
+         
+}
+.radio-wrapper:hover, .radio-wrapper:has(input:focus), .radio-wrapper:has(input[type=radio]:checked){
+      border-radius: 0.5rem;
+      background: var(--shape-hover);
+      font: var(--body-sm);
+      color: var(--text-heading);
+      & svg path{
+            fill: var(--brand-light);
       }
 }
