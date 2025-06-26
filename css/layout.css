@@ -34,8 +34,11 @@ aside{
       }
 }
 
+main{ 
+      overflow: auto;
+}
 .main-container{
-      width: 35rem;
+      width: 40rem;
       background: var(--shape-body);
       padding-block: 5rem;
       border-radius: 0.75rem;
