@@ -22,32 +22,3 @@ input, textarea{
       color: var(--input-placeholder);
 }     
 
-.color-wrapper{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 1rem;
-}
-.color-select{
-  position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: 0.4rem solid var(--shape-button);
-  box-sizing: border-box;
-  display: inline-block;
-  background-color: var(--some-color);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.color-select::after{
-      content: "";
-      position: absolute;
-      inset: -0.5rem;
-      border-radius: 50%;
-      border: 2px solid transparent;
-      transition: border-color 0.3s ease;
-}
-.color-select:checked::after, .color-select:hover::after, .color-select:focus::after{
-      border: 2px solid var(--brand-light);
-}

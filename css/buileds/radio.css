@@ -52,3 +52,92 @@
             fill: var(--brand-light);
       }
 }
+
+
+.color-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 1rem;
+}
+.color-select{
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--shape-button);
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: var(--some-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.color-select::after{
+      content: "";
+      position: absolute;
+      inset: -0.5rem;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+}
+.color-select:checked::after, .color-select:hover::after, .color-select:focus::after{
+      border: 2px solid var(--brand-light);
+}
+
+
+
+.custom h3{
+      color: var(--text-heading);
+      font: var(--body-xs);
+      margin-top: 1.5rem;
+}
+.theme{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+      & h3{
+            grid-column: 1/5;
+      }
+}
+.theme-wrapper{
+      background: var(--input-stroke);
+      color: var(--text-heading);
+      font: 400 14px var(--Open-sans);
+      border-radius: 0.4rem;
+      padding: 0.2rem;
+      position: relative;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      border: 2px solid transparent;
+      & input{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            opacity: 0%;
+      }
+}
+.theme-wrapper img{
+      width: 100%;
+      height: 4rem;
+      object-fit: cover;
+      border-radius: 0.2rem;
+}
+.theme-wrapper label{
+      display: flex;
+      margin-block: 0.3rem;
+      justify-content: center;
+}
+
+
+/* .theme-wrapper::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 0.4rem;
+      border: 2px solid transparent
+} */
+ .theme-wrapper:has(input[type=radio]:checked),  .theme-wrapper:has(input[type=radio]:focus),  .theme-wrapper:has(input[type=radio]:hover){
+      border: 2px solid var(--brand-light);
+      
+ }
