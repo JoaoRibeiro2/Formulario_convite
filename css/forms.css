@@ -1,6 +1,7 @@
 @import url('buileds/input.css');
 @import url('buileds/radio.css');
 @import url('buileds/textarea.css');
+@import url('buileds/file.css');
 
 .grid{
       display: grid;
@@ -24,3 +25,15 @@ fieldset{
       margin-top: 4rem;
 }
 
+.personalization{
+      width: 100%;
+      height: 7rem;
+      display: flex;
+      justify-content: space-between;
+      & .style{
+            width: 30%;
+      }
+      & .photo{
+            width: 70%;
+      }
+}

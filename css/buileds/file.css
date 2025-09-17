@@ -1,0 +1,29 @@
+.photo-wrapper{
+    width: 7.45rem;
+    height: 2.5rem;
+    background: var(--shape-button);
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    & label{
+        color: #ffffff;
+        font: var(--body-sm);
+    }
+
+}
+.photo-wrapper input[type="file"]{
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+}
+
+.photo-wrapper:hover{
+    background: var(--shape-hover);
+}
