@@ -8,10 +8,13 @@
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
 }
+fieldset:nth-child(1){
+      margin-top: 1.5rem;
+}
 
 fieldset{ 
       border: none; 
-      margin-top: 1.5rem;
+      margin-top: 4rem;
       header{
             display: flex;
             font: 700 1.12rem 'Baloo 2';
@@ -35,5 +38,38 @@ fieldset{
       }
       & .photo{
             width: 70%;
+      }
+}
+
+.terms{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-top: 1px solid var(--input-stroke);
+      padding-top: 2rem;
+}
+
+.submit{
+      margin-top: 4rem;
+      display: flex;
+      justify-content: end;
+      & button{
+            width: 11rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-appearance: none;
+            appearance: none;
+            border: none;
+            gap: 0.5rem;
+            color: var(--text-heading);
+            font: var(--body-sm);
+            background: var(--brand-dark);
+            border-radius: 0.5rem;
+      }
+      & button:hover{
+            background: var(--brand-mid);
+            cursor: pointer;
       }
 }
