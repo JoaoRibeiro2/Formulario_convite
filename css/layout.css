@@ -41,6 +41,7 @@ main{
       width: 40rem;
       background: var(--shape-body);
       padding-block: 5rem;
+      padding-inline: 0.5rem;
       border-radius: 0.75rem;
       h2{
             font: 700 1.75rem 'Baloo 2';
