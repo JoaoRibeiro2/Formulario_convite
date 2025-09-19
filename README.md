@@ -6,4 +6,6 @@
 
 `HTML 5` , `CSS 3` e `JavaScript`
 
-- Neste projeto, estou estudando como desenvolver um formulário com estilizações bem completas, tornando a interação do usuário bem simples e divertida!!!. Quando o projeto estiver finalizado, avisarei por aqui!!!
+- Neste projeto, estou estudando como desenvolver um formulário com estilizações bem completas, tornando a interação do usuário bem simples e divertida!!!. 
+
+### Projeto enfim, finalizado!!! Futuramente, poderei fazer algumas atualizações, mas visualmente, ficou muito agradável. Confira.
